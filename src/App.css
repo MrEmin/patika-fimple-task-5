@@ -1,0 +1,67 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f0f0f0;
+}
+
+.App {
+  text-align: center;
+}
+
+.weather-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  max-width: 1000px;
+  margin-top: 20px;
+}
+
+.weather-card {
+  width: 150px;
+  padding: 10px;
+  margin: 10px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.weather-card h3 {
+  margin-top: 0;
+  margin-bottom: 5px;
+  font-size: 18px;
+}
+
+.weather-card img {
+  width: 50px;
+  height: 50px;
+}
+
+.dropdown-container {
+  margin-bottom: 20px;
+}
+
+.dropdown-select {
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #fff;
+  color: #333;
+  outline: none;
+}
+
+.dropdown-select,
+.weather-card {
+  transition: border-color 0.3s ease-in-out;
+}
+
+.dropdown-select:hover,
+.dropdown-select:focus,
+.weather-card:hover {
+  border-color: #66afe9;
+}
